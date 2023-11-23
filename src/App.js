@@ -187,6 +187,8 @@ import Existing from "./Existing";
 import New from "./New";
 import Productsview from "./ProductsView";
 import Products from "./products"
+import NewForms from "./NewForms";
+
 function App(){
 return(
     <div className='container'>
@@ -205,8 +207,22 @@ return(
             </Route>
             <Route path='/Products'element={<Products/>}/>
             <Route path='/Products/:id' element={<Productsview/>}/>
+            <Route path='/NewForms'element={<NewForms/>}></Route>
+
         </Routes>
     </div>
 )
 }
 export default App;
+
+// import React from 'react'
+// import NewForms from './NewForms'
+// const App = () => {
+//   return (
+//     <div>
+//       <NewForms/>
+//     </div>
+//   )
+// }
+
+// export default App
